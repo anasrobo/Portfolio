@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #2563EB; /* blue-600 */
+  --color-primary-50: #EFF6FF; /* blue-50 */
+  --color-primary-100: #DBEAFE; /* blue-100 */
+  --color-primary-500: #3B82F6; /* blue-500 */
+  --color-primary-600: #2563EB; /* blue-600 */
+  --color-primary-700: #1D4ED8; /* blue-700 */
+  --color-primary-900: #1E3A8A; /* blue-900 */
+  
+  /* Secondary Colors */
+  --color-secondary: #64748B; /* slate-500 */
+  --color-secondary-100: #F1F5F9; /* slate-100 */
+  --color-secondary-200: #E2E8F0; /* slate-200 */
+  --color-secondary-300: #CBD5E1; /* slate-300 */
+  --color-secondary-400: #94A3B8; /* slate-400 */
+  --color-secondary-500: #64748B; /* slate-500 */
+  --color-secondary-600: #475569; /* slate-600 */
+  --color-secondary-700: #334155; /* slate-700 */
+  --color-secondary-800: #1E293B; /* slate-800 */
+  
+  /* Accent Colors */
+  --color-accent: #10B981; /* emerald-500 */
+  --color-accent-50: #ECFDF5; /* emerald-50 */
+  --color-accent-100: #D1FAE5; /* emerald-100 */
+  --color-accent-500: #10B981; /* emerald-500 */
+  --color-accent-600: #059669; /* emerald-600 */
+  --color-accent-700: #047857; /* emerald-700 */
+  
+  /* Background Colors */
+  --color-background: #FAFAFA; /* gray-50 */
+  --color-surface: #FFFFFF; /* white */
+  
+  /* Text Colors */
+  --color-text-primary: #1E293B; /* slate-800 */
+  --color-text-secondary: #64748B; /* slate-500 */
+  
+  /* Status Colors */
+  --color-success: #059669; /* emerald-600 */
+  --color-warning: #D97706; /* amber-600 */
+  --color-error: #DC2626; /* red-600 */
+  
+  /* Shadow Variables */
+  --shadow-minimal: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-elevated: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Animation Timing */
+  --timing-fast: 200ms;
+  --timing-medium: 300ms;
+  --timing-slow: 400ms;
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-100 text-secondary-700 px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:bg-secondary-200 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2;
+  }
+  
+  .card {
+    @apply bg-surface rounded-lg shadow-minimal border border-secondary-200 transition-shadow duration-200 hover:shadow-elevated;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn var(--timing-slow) ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp var(--timing-medium) ease-out;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .transition-micro {
+    transition-duration: var(--timing-fast);
+  }
+  
+  .transition-smooth {
+    transition-duration: var(--timing-medium);
+  }
+  
+  .transition-reveal {
+    transition-duration: var(--timing-slow);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary-500);
+}

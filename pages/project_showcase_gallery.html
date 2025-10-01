@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Showcase Gallery - Mohammad Anas Hussain</title>
+    <meta name="description" content="Explore Mohammad Anas Hussain's comprehensive project portfolio featuring data science applications, full-stack web development, and production-ready implementations with live demos and detailed case studies." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fanasportf4298back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Sticky Header Navigation -->
+    <header class="sticky top-0 z-50 bg-surface/95 backdrop-blur-sm border-b border-secondary-200 transition-all duration-300">
+        <nav class="container-max mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo/Brand -->
+                <div class="flex-shrink-0">
+                    <a href="hero_landing.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
+                            <span class="text-white font-mono font-bold text-sm">MA</span>
+                        </div>
+                        <span class="font-semibold text-lg text-text-primary">Anas Hussain</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_landing.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Home</a>
+                        <a href="professional_journey.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Experience</a>
+                        <a href="technical_expertise_hub.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Skills</a>
+                        <a href="project_showcase_gallery.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm transition-colors duration-200">Projects</a>
+                        <a href="academic_foundation.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Education</a>
+                        <a href="leadership_growth.html" class="text-text-secondary hover:text-primary px-3 py-2 rounded-md text-sm transition-colors duration-200">Leadership</a>
+                    </div>
+                </div>
+
+                <!-- Theme Toggle & Mobile Menu Button -->
+                <div class="flex items-center space-x-4">
+                    <!-- Theme Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-secondary-100 hover:bg-secondary-200 transition-colors duration-200" aria-label="Toggle theme">
+                        <svg class="w-5 h-5 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="p-2 rounded-lg bg-secondary-100 hover:bg-secondary-200 transition-colors duration-200" aria-label="Open menu">
+                            <svg class="w-6 h-6 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-surface border-t border-secondary-200">
+                    <a href="hero_landing.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-colors duration-200">Home</a>
+                    <a href="professional_journey.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-colors duration-200">Experience</a>
+                    <a href="technical_expertise_hub.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-colors duration-200">Skills</a>
+                    <a href="project_showcase_gallery.html" class="text-primary font-medium block px-3 py-2 rounded-md text-base">Projects</a>
+                    <a href="academic_foundation.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-colors duration-200">Education</a>
+                    <a href="leadership_growth.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base transition-colors duration-200">Leadership</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section-padding bg-gradient-to-br from-primary-50 via-background to-accent-50 border-b border-secondary-200">
+        <div class="container-max mx-auto text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in">
+                    <span class="text-text-primary">Project</span>
+                    <span class="text-gradient">Showcase</span>
+                </h1>
+                <p class="text-xl text-text-secondary mb-8 leading-relaxed animate-slide-up">
+                    Explore my technical journey through <span class="text-primary font-semibold">15+ production-ready projects</span> 
+                    spanning data science, machine learning, and full-stack development. Each project demonstrates 
+                    <span class="text-accent font-semibold">end-to-end delivery</span> with quantified impact and comprehensive documentation.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="flex flex-wrap justify-center gap-6 mb-8 animate-slide-up">
+                    <div class="flex items-center space-x-2 bg-surface px-4 py-2 rounded-full shadow-minimal border border-secondary-200">
+                        <div class="w-2 h-2 bg-primary rounded-full"></div>
+                        <span class="text-sm font-medium text-text-secondary">8 Live Demos</span>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-surface px-4 py-2 rounded-full shadow-minimal border border-secondary-200">
+                        <div class="w-2 h-2 bg-accent rounded-full"></div>
+                        <span class="text-sm font-medium text-text-secondary">12+ Technologies</span>
+                    </div>
+                    <div class="flex items-center space-x-2 bg-surface px-4 py-2 rounded-full shadow-minimal border border-secondary-200">
+                        <div class="w-2 h-2 bg-secondary-500 rounded-full"></div>
+                        <span class="text-sm font-medium text-text-secondary">100% Open Source</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Controls -->
+    <section class="section-padding bg-surface border-b border-secondary-200">
+        <div class="container-max mx-auto">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Search & Filter Toggle -->
+                <div class="flex items-center space-x-4 w-full lg:w-auto">
+                    <div class="relative flex-1 lg:w-80">
+                        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                        <input type="text" id="project-search" placeholder="Search projects..." class="input-field pl-10 pr-4" />
+                    </div>
+                    <button id="filter-toggle" class="btn-secondary flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                        </svg>
+                        <span>Filters</span>
+                    </button>
+                </div>
+
+                <!-- Results Count & Reset -->
+                <div class="flex items-center space-x-4">
+                    <span id="results-count" class="text-sm text-text-secondary font-medium">Showing 8 projects</span>
+                    <button id="reset-filters" class="text-sm text-primary hover:text-primary-700 font-medium transition-colors duration-200">
+                        Reset All
+                    </button>
+                </div>
+            </div>
+
+            <!-- Advanced Filters Panel -->
+            <div id="filters-panel" class="hidden mt-6 p-6 bg-secondary-50 rounded-xl border border-secondary-200">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Technology Filter -->
+                    <div>
+                        <h3 class="text-sm font-semibold text-text-primary mb-3">Technology Stack</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="tech-filter" value="python" checked />
+                                <span class="text-sm text-text-secondary">Python</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="tech-filter" value="javascript" checked />
+                                <span class="text-sm text-text-secondary">JavaScript</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="tech-filter" value="react" checked />
+                                <span class="text-sm text-text-secondary">React</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="tech-filter" value="nodejs" checked />
+                                <span class="text-sm text-text-secondary">Node.js</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="tech-filter" value="tensorflow" checked />
+                                <span class="text-sm text-text-secondary">TensorFlow</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Project Type Filter -->
+                    <div>
+                        <h3 class="text-sm font-semibold text-text-primary mb-3">Project Type</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="type-filter" value="data-science" checked />
+                                <span class="text-sm text-text-secondary">Data Science</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="type-filter" value="web-app" checked />
+                                <span class="text-sm text-text-secondary">Web Application</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="type-filter" value="machine-learning" checked />
+                                <span class="text-sm text-text-secondary">Machine Learning</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="type-filter" value="api" checked />
+                                <span class="text-sm text-text-secondary">API Development</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Complexity Filter -->
+                    <div>
+                        <h3 class="text-sm font-semibold text-text-primary mb-3">Complexity Level</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="complexity-filter" value="beginner" checked />
+                                <span class="text-sm text-text-secondary">Beginner</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="complexity-filter" value="intermediate" checked />
+                                <span class="text-sm text-text-secondary">Intermediate</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" class="complexity-filter" value="advanced" checked />
+                                <span class="text-sm text-text-secondary">Advanced</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section class="section-padding">
+        <div class="container-max mx-auto">
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1: E-Commerce Analytics Dashboard -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="python,tensorflow,javascript" data-type="data-science,web-app" data-complexity="advanced">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-Commerce Analytics Dashboard Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-primary text-white text-xs font-medium rounded-full">Live Demo</span>
+                            <span class="px-2 py-1 bg-accent text-white text-xs font-medium rounded-full">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            E-Commerce Analytics Dashboard
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            Real-time analytics platform processing 50K+ daily transactions with predictive sales forecasting, 
+                            customer segmentation, and automated reporting. Increased revenue insights by 35%.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">Python</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">TensorFlow</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">React</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">PostgreSQL</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">50K+</div>
+                                <div class="text-xs text-text-secondary">Daily Transactions</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">35%</div>
+                                <div class="text-xs text-text-secondary">Revenue Insights</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://ecommerce-analytics-demo.vercel.app" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anashussain/ecommerce-analytics" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2: Smart Task Management API -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="nodejs,javascript" data-type="api,web-app" data-complexity="intermediate">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Task Management API Architecture" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-primary text-white text-xs font-medium rounded-full">API</span>
+                            <span class="px-2 py-1 bg-secondary-500 text-white text-xs font-medium rounded-full">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            Smart Task Management API
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            RESTful API with intelligent task prioritization, team collaboration features, and real-time notifications. 
+                            Handles 10K+ concurrent users with 99.9% uptime and sub-200ms response times.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">Node.js</span>
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">Express</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">MongoDB</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Redis</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">10K+</div>
+                                <div class="text-xs text-text-secondary">Concurrent Users</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">99.9%</div>
+                                <div class="text-xs text-text-secondary">Uptime</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://task-api-docs.herokuapp.com" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                <span>API Docs</span>
+                            </a>
+                            <a href="https://github.com/anashussain/smart-task-api" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3: ML-Powered Stock Predictor -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="python,tensorflow" data-type="machine-learning,data-science" data-complexity="advanced">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg" alt="Stock Market Prediction Dashboard" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-accent text-white text-xs font-medium rounded-full">ML Model</span>
+                            <span class="px-2 py-1 bg-accent text-white text-xs font-medium rounded-full">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            ML-Powered Stock Predictor
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            Deep learning model using LSTM networks for stock price prediction with 78% accuracy. 
+                            Processes real-time market data and sentiment analysis from 15+ financial sources.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">Python</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">TensorFlow</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Pandas</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Streamlit</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">78%</div>
+                                <div class="text-xs text-text-secondary">Prediction Accuracy</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">15+</div>
+                                <div class="text-xs text-text-secondary">Data Sources</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://stock-predictor-ml.streamlit.app" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anashussain/ml-stock-predictor" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 4: Social Media Analytics Platform -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="react,nodejs,python" data-type="web-app,data-science" data-complexity="advanced">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?q=80&w=2939&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Social Media Analytics Dashboard" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-primary text-white text-xs font-medium rounded-full">Full-Stack</span>
+                            <span class="px-2 py-1 bg-accent text-white text-xs font-medium rounded-full">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            Social Media Analytics Platform
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            Comprehensive social media monitoring tool with sentiment analysis, trend detection, and automated reporting. 
+                            Processes 1M+ posts daily across 5 major platforms with real-time insights.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">React</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">Node.js</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Python</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Docker</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">1M+</div>
+                                <div class="text-xs text-text-secondary">Daily Posts</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">5</div>
+                                <div class="text-xs text-text-secondary">Platforms</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://social-analytics-platform.vercel.app" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anashussain/social-analytics" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 5: Real-Time Chat Application -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="react,nodejs,javascript" data-type="web-app" data-complexity="intermediate">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Real-Time Chat Application Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2020/04/26/12/34/chat-5094849_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-primary text-white text-xs font-medium rounded-full">Real-Time</span>
+                            <span class="px-2 py-1 bg-secondary-500 text-white text-xs font-medium rounded-full">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            Real-Time Chat Application
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            Scalable chat platform with WebSocket connections, file sharing, and group messaging. 
+                            Supports 5K+ concurrent users with message encryption and offline message delivery.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">React</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">Node.js</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Socket.io</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">MongoDB</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">5K+</div>
+                                <div class="text-xs text-text-secondary">Concurrent Users</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">100%</div>
+                                <div class="text-xs text-text-secondary">Message Delivery</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://realtime-chat-app.netlify.app" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anashussain/realtime-chat" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 6: Weather Prediction System -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="python,tensorflow" data-type="machine-learning,data-science" data-complexity="intermediate">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.pixabay.com/photo/2016/05/03/14/40/weather-1369776_1280.jpg" alt="Weather Prediction System Dashboard" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-accent text-white text-xs font-medium rounded-full">ML Model</span>
+                            <span class="px-2 py-1 bg-secondary-500 text-white text-xs font-medium rounded-full">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            Weather Prediction System
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            Machine learning model for accurate weather forecasting using historical data and satellite imagery. 
+                            Achieves 85% accuracy for 7-day forecasts with automated alert system for extreme weather.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">Python</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">TensorFlow</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Scikit-learn</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Flask</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">85%</div>
+                                <div class="text-xs text-text-secondary">Forecast Accuracy</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">7</div>
+                                <div class="text-xs text-text-secondary">Day Predictions</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://weather-ml-predictor.herokuapp.com" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anashussain/weather-prediction" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 7: Personal Finance Tracker -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="react,nodejs,javascript" data-type="web-app" data-complexity="beginner">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Personal Finance Tracker Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-primary text-white text-xs font-medium rounded-full">Web App</span>
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded-full">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            Personal Finance Tracker
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            Intuitive expense tracking application with budget planning, category-wise analysis, and financial goal setting. 
+                            Features automated transaction categorization and monthly spending insights.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">React</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">Node.js</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Chart.js</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">SQLite</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">12</div>
+                                <div class="text-xs text-text-secondary">Categories</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">95%</div>
+                                <div class="text-xs text-text-secondary">Auto-Categorization</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://finance-tracker-app.netlify.app" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anashussain/finance-tracker" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 8: Recipe Recommendation Engine -->
+                <article class="project-card card group cursor-pointer transition-all duration-300 hover:scale-105" data-tech="python,javascript" data-type="machine-learning,web-app" data-complexity="intermediate">
+                    <div class="relative overflow-hidden rounded-t-lg">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Recipe Recommendation Engine Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/06/06/22/46/mediterranean-cuisine-2378758_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 flex space-x-2">
+                            <span class="px-2 py-1 bg-accent text-white text-xs font-medium rounded-full">Recommendation</span>
+                            <span class="px-2 py-1 bg-secondary-500 text-white text-xs font-medium rounded-full">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                            Recipe Recommendation Engine
+                        </h3>
+                        <p class="text-text-secondary text-sm mb-4 line-clamp-3">
+                            AI-powered recipe recommendation system using collaborative filtering and content-based algorithms. 
+                            Analyzes user preferences, dietary restrictions, and ingredient availability for personalized suggestions.
+                        </p>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-primary-100 text-primary text-xs font-medium rounded">Python</span>
+                            <span class="px-2 py-1 bg-accent-100 text-accent text-xs font-medium rounded">Scikit-learn</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">Flask</span>
+                            <span class="px-2 py-1 bg-secondary-100 text-secondary-700 text-xs font-medium rounded">JavaScript</span>
+                        </div>
+
+                        <!-- Metrics -->
+                        <div class="grid grid-cols-2 gap-4 mb-4 text-center">
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-primary">10K+</div>
+                                <div class="text-xs text-text-secondary">Recipe Database</div>
+                            </div>
+                            <div class="bg-secondary-50 rounded-lg p-2">
+                                <div class="text-lg font-bold text-accent">92%</div>
+                                <div class="text-xs text-text-secondary">User Satisfaction</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex space-x-3">
+                            <a href="https://recipe-recommender.herokuapp.com" target="_blank" rel="noopener noreferrer" class="flex-1 btn-primary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anashussain/recipe-recommender" target="_blank" rel="noopener noreferrer" class="flex-1 btn-secondary text-center text-sm py-2 flex items-center justify-center space-x-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span>Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <div class="max-w-md mx-auto">
+                    <svg class="w-16 h-16 text-secondary-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">No Projects Found</h3>
+                    <p class="text-text-secondary mb-4">Try adjusting your filters or search terms to find more projects.</p>
+                    <button id="clear-search" class="btn-primary">Clear Filters</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section-padding bg-gradient-to-br from-primary-50 via-background to-accent-50 border-t border-secondary-200">
+        <div class="container-max mx-auto text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl font-bold text-text-primary mb-6">
+                    Ready to Build Something Amazing Together?
+                </h2>
+                <p class="text-lg text-text-secondary mb-8 leading-relaxed">
+                    These projects represent my journey in data science and full-stack development. 
+                    I'm excited to bring this same passion and technical expertise to your team.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="hero_landing.html" class="btn-primary inline-flex items-center space-x-2 group">
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>Get In Touch</span>
+                    </a>
+                    <a href="javascript:void(0)" onclick="downloadResume()" class="btn-secondary inline-flex items-center space-x-2 group">
+                        <svg class="w-5 h-5 group-hover:translate-y-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Theme toggle functionality (placeholder)
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            console.log('Theme toggle clicked');
+        });
+
+        // Filter functionality
+        const filterToggle = document.getElementById('filter-toggle');
+        const filtersPanel = document.getElementById('filters-panel');
+        const projectSearch = document.getElementById('project-search');
+        const resultsCount = document.getElementById('results-count');
+        const resetFilters = document.getElementById('reset-filters');
+        const clearSearch = document.getElementById('clear-search');
+        const noResults = document.getElementById('no-results');
+        const projectsGrid = document.getElementById('projects-grid');
+
+        // Toggle filters panel
+        filterToggle.addEventListener('click', () => {
+            filtersPanel.classList.toggle('hidden');
+        });
+
+        // Get all project cards and filter elements
+        const projectCards = document.querySelectorAll('.project-card');
+        const techFilters = document.querySelectorAll('.tech-filter');
+        const typeFilters = document.querySelectorAll('.type-filter');
+        const complexityFilters = document.querySelectorAll('.complexity-filter');
+
+        // Filter function
+        function filterProjects() {
+            const searchTerm = projectSearch.value.toLowerCase();
+            const selectedTechs = Array.from(techFilters).filter(cb => cb.checked).map(cb => cb.value);
+            const selectedTypes = Array.from(typeFilters).filter(cb => cb.checked).map(cb => cb.value);
+            const selectedComplexities = Array.from(complexityFilters).filter(cb => cb.checked).map(cb => cb.value);
+
+            let visibleCount = 0;
+
+            projectCards.forEach(card => {
+                const cardTechs = card.dataset.tech.split(',');
+                const cardTypes = card.dataset.type.split(',');
+                const cardComplexity = card.dataset.complexity;
+                const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+                const cardDescription = card.querySelector('p').textContent.toLowerCase();
+
+                // Check if card matches search term
+                const matchesSearch = searchTerm === '' || 
+                    cardTitle.includes(searchTerm) || 
+                    cardDescription.includes(searchTerm);
+
+                // Check if card matches tech filters
+                const matchesTech = selectedTechs.length === 0 || 
+                    selectedTechs.some(tech => cardTechs.includes(tech));
+
+                // Check if card matches type filters
+                const matchesType = selectedTypes.length === 0 || 
+                    selectedTypes.some(type => cardTypes.includes(type));
+
+                // Check if card matches complexity filters
+                const matchesComplexity = selectedComplexities.length === 0 || 
+                    selectedComplexities.includes(cardComplexity);
+
+                // Show/hide card based on all criteria
+                if (matchesSearch && matchesTech && matchesType && matchesComplexity) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update results count
+            resultsCount.textContent = `Showing ${visibleCount} project${visibleCount !== 1 ? 's' : ''}`;
+
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.classList.remove('hidden');
+                projectsGrid.style.display = 'none';
+            } else {
+                noResults.classList.add('hidden');
+                projectsGrid.style.display = 'grid';
+            }
+        }
+
+        // Add event listeners for all filters
+        projectSearch.addEventListener('input', filterProjects);
+        techFilters.forEach(filter => filter.addEventListener('change', filterProjects));
+        typeFilters.forEach(filter => filter.addEventListener('change', filterProjects));
+        complexityFilters.forEach(filter => filter.addEventListener('change', filterProjects));
+
+        // Reset filters function
+        function resetAllFilters() {
+            projectSearch.value = '';
+            techFilters.forEach(filter => filter.checked = true);
+            typeFilters.forEach(filter => filter.checked = true);
+            complexityFilters.forEach(filter => filter.checked = true);
+            filterProjects();
+        }
+
+        // Reset filters event listeners
+        resetFilters.addEventListener('click', resetAllFilters);
+        clearSearch.addEventListener('click', resetAllFilters);
+
+        // Resume download function
+        function downloadResume() {
+            alert('Resume download would be triggered here. Please contact for the latest version.');
+        }
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-elevated');
+            } else {
+                header.classList.remove('shadow-elevated');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Initialize filters on page load
+        filterProjects();
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
